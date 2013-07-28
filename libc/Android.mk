@@ -788,6 +788,7 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := $(libc_common_src_files)
 LOCAL_CFLAGS := $(libc_common_cflags) \
     -std=gnu99 \
+    -fno-strict-aliasing \
     -I$(LOCAL_PATH)/upstream-netbsd/libc/include # for netbsd private headers
 LOCAL_C_INCLUDES := $(libc_common_c_includes)
 LOCAL_MODULE := libc_common
